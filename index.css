@@ -493,8 +493,8 @@
   }
   .boxin-inside2 ul {
     padding-top: 1px;
-    padding-left: 2px;
-    font-size: 15px;
+    padding-left: 3.5px;
+    font-size: 16px;
   }
   /* Sidebar 2 */
   .sidebar2 {
@@ -502,6 +502,7 @@
     padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
+    height: 17%;
   }
   .sidebar2-content {
     padding-top: 0px;
@@ -518,32 +519,21 @@
   .for-title > .alertt{
     visibility: hidden;
   }
-  .sidebar2-content-box1{
-    background-color: red;
-  }
-  .sidebar2-content-box2{
-    background-color: rgb(72, 226, 0);
-  }
-  .sidebar2-content-box3{
-    background-color: rgb(26, 39, 211);
-  }
-  .sidebar2-content-box4{
-    background-color: rgb(167, 250, 13);
-  }
   .box-title-content2{
     width: 100%;
+    padding-top: 8px;
   }
   .sidebar2-content-box1 span,
   .sidebar2-content-box2 span,
   .sidebar2-content-box3 span,
   .sidebar2-content-box4 span {
-    font-size: 35px;
+    font-size: 33px;
   }
   .sidebar2-content-box1 p,
   .sidebar2-content-box2 p,
   .sidebar2-content-box3 p,
   .sidebar2-content-box4 p {
-    font-size: 20px;
+    font-size: 15px;
   }
   .sidebar2-content-box1 >.box-img,
   .sidebar2-content-box2 >.box-img,
@@ -551,6 +541,9 @@
   .sidebar2-content-box4 >.box-img {
     visibility: hidden;
   }
+  /* Sidebar 2 */
+
+  /* Sidebar 3 */
   .sidebar3 {
     padding-top: 0px;
     margin-top: 0px;
@@ -564,6 +557,10 @@
   .sidebar3-content button {
     height: 40px;
   }
+  .box-title-sidebar3{
+    padding-left: 21px;
+  }
+  /* Sidebar 3 */
 }
 
 /* Styles for screens between 768px and 1023px (tablet) */
