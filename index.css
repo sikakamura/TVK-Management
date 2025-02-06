@@ -65,8 +65,8 @@
 .below-box1 {
   width: 100%;
   height: 10%;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 25px;
@@ -482,12 +482,13 @@
     padding-left: 20px;
   }
   .below-box-content2-inside2 {
-    padding-right: 20px;
-    display: flex;
+    padding-right: 1em;
     padding-top: 12px;
   }
   .boxin-inside2 {
     height: 25px;
+    padding-right: 1.3em;
+    width: 10%;
   }
   .boxin-inside2 p {
     visibility: hidden;
@@ -566,16 +567,360 @@
 
 /* Styles for screens between 768px and 1023px (tablet) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: lightgreen;
+  .content1 {
+    visibility: hidden;
+    display: none;
   }
+  .content2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar-in-2 ul {
+    padding-left: 0px;
+  }
+  .sidebar-in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .circle {
+    margin-top: 7px;
+  }
+  .sidebar-in-2 {
+    justify-content: flex-end;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  /* For Dashborad */
+  .below-box-content2 {
+    width: 100%;
+    height: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .below-box-content2-inside1 {
+    padding-top: 6px;
+    padding-left: 20px;
+  }
+  .below-box-content2-inside2 {
+    padding-right: 2em;
+    display: flex;
+    padding-top: 12px;
+  }
+  .boxin-inside2 {
+    width: 26%;
+    height: 30px;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .boxin-inside2 p {
+    font-size: 23px;
+  }
+  .boxin-inside2 ul {
+    padding-top: 3px;
+    padding-left: 3.5px;
+    font-size: 20px;
+  }
+  /* Sidebar 2 */
+  .sidebar2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 17%;
+  }
+  .sidebar2-content {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
+  }
+  .sidebar2-content-box {
+    padding-left: 0px;
+  }
+  .title-detail-for2{
+    margin-bottom: 0px;
+  }
+  .for-title > .alertt{
+    visibility: hidden;
+  }
+  .box-title-content2{
+    width: 100%;
+    padding-top: 8px;
+  }
+  .sidebar2-content-box1 span,
+  .sidebar2-content-box2 span,
+  .sidebar2-content-box3 span,
+  .sidebar2-content-box4 span {
+    font-size: 50px;
+  }
+  .sidebar2-content-box1 p,
+  .sidebar2-content-box2 p,
+  .sidebar2-content-box3 p,
+  .sidebar2-content-box4 p {
+    font-size: 30px;
+  }
+  .sidebar2-content-box1 >.box-img,
+  .sidebar2-content-box2 >.box-img,
+  .sidebar2-content-box3 >.box-img,
+  .sidebar2-content-box4 >.box-img {
+    visibility: hidden;
+  }
+  /* Sidebar 2 */
+
+  /* Sidebar 3 */
+  .sidebar3 {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .box-title-sidebar3 {
+    padding-top: 0px;
+  }
+  .sidebar3-content {
+    padding-top: 20px;
+  }
+  .sidebar3-content button {
+    height: 40px;
+  }
+  .box-title-sidebar3{
+    padding-left: 21px;
+  }
+  /* Sidebar 3 */
+  .sidebar3{
+    padding-top: 0px;
+    height: 5%;
+  }
+  .sidebar3-content{
+    height: 100%;
+  }
+  /* Sidebar 3 */
+
+  /* Card  */
+    #cardContainer {
+      width: 90%; /* Make it responsive within the available space */
+      max-width: 900px; /* Prevent it from becoming too wide */
+      min-width: 350px; /* Prevent it from shrinking too much */
+      margin: 0 auto; /* Center it */
+      display: flex; /* Use flexbox for layout */
+      flex-wrap: wrap; /* Allow wrapping of cards */
+      margin-top: 2em;
+      padding-left: 2.5em;
+      padding-right: 0px;
+      gap: 9em;
+    }
+    .card {
+      width: 300px;
+      height: 350px;
+      box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    }
 }
 
 /* Styles for screens larger than 1024px (desktop) */
-@media (min-width: 1024px) {
-  body {
-    background-color: lightcoral;
+@media (min-width: 1024px) and (max-width: 1290px) {
+  /*  Content 1 */
+  .sideabove {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family: Hanuman;
+  } 
+  .above-box {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 8px;
   }
+  .box-image {
+    width: 45%;
+    height: 65px;
+    background-color: black;
+  }
+  .box-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .box-title {
+    width: 50%;
+    text-align: center;
+  }
+  .box-title h2{
+    font-size: 19px;
+    padding-right: 0.5em;
+  }
+  .below-box,
+.below-box1 {
+  padding-top: 0.5em;
+  padding-right: 1em;
 }
+.inside-box p{
+  font-size: 0.9rem;
+}
+.footer-below {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  margin-top: 165px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  padding-left: 0.8em;
+  font-size: 22px;
+}
+  /*  Content 1 */
+
+  .content2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar-in-2 ul {
+    padding-left: 0px;
+  }
+  .sidebar-in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .circle {
+    margin-top: 7px;
+  }
+  .sidebar-in-2 {
+    justify-content: flex-end;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  /* For Dashborad */
+  .below-box-content2 {
+    width: 100%;
+    height: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .below-box-content2-inside1 {
+    padding-top: 0.5em;
+    padding-left: 20px;
+  }
+  .below-box-content2-inside2 {
+    display: flex;
+    padding-top: 0.6em;
+  }
+  .boxin-inside2 {
+    width: 17%;
+    height: 30px;
+    align-items: center;
+    padding-top: 14px;
+    padding-right: 2em;
+  }
+  .below-box-content2-inside1 p,
+  .boxin-inside2 p {
+    font-size: 20px;
+  }
+  .boxin-inside2 p{
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  .boxin-inside2 ul {
+    padding-top: 3px;
+    padding-left: 3.5px;
+    font-size: 20px;
+  }
+  /* Sidebar 2 */
+  .sidebar2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 17%;
+  }
+  .sidebar2-content {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
+  }
+  .sidebar2-content-box {
+    padding-left: 0px;
+  }
+  .title-detail-for2{
+    margin-bottom: 0px;
+  }
+  .for-title > .alertt{
+    visibility: hidden;
+  }
+  .box-title-content2{
+    width: 100%;
+    padding-top: 8px;
+  }
+  .sidebar2-content-box1 span,
+  .sidebar2-content-box2 span,
+  .sidebar2-content-box3 span,
+  .sidebar2-content-box4 span {
+    font-size: 50px;
+  }
+  .sidebar2-content-box1 p,
+  .sidebar2-content-box2 p,
+  .sidebar2-content-box3 p,
+  .sidebar2-content-box4 p {
+    font-size: 30px;
+  }
+  .sidebar2-content-box1 >.box-img,
+  .sidebar2-content-box2 >.box-img,
+  .sidebar2-content-box3 >.box-img,
+  .sidebar2-content-box4 >.box-img {
+    visibility: hidden;
+  }
+  /* Sidebar 2 */
+
+  /* Sidebar 3 */
+  .sidebar3 {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .box-title-sidebar3 {
+    padding-top: 0px;
+  }
+  .sidebar3-content {
+    padding-top: 20px;
+  }
+  .sidebar3-content button {
+    height: 40px;
+  }
+  .box-title-sidebar3{
+    padding-left: 21px;
+    font-size: 20px;
+    padding-top: 0.5em;
+  }
+  /* Sidebar 3 */
+  .sidebar3{
+    padding-top: 0px;
+    height: 5%;
+  }
+  .sidebar3-content{
+    height: 100%;
+  }
+  /* Sidebar 3 */
+
+  /* Card  */
+    #cardContainer {
+      width: 90%; /* Make it responsive within the available space */
+      max-width: 900px; /* Prevent it from becoming too wide */
+      min-width: 350px; /* Prevent it from shrinking too much */
+      margin: 0 auto; /* Center it */
+      display: flex; /* Use flexbox for layout */
+      flex-wrap: wrap; /* Allow wrapping of cards */
+      margin-top: 2em;
+      padding-left: 2.5em;
+      padding-right: 0px;
+      gap: 10em;
+    }
+    .card {
+      width: 350px;
+      height: 350px;
+      box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    }
+}
+
 
 /* For Responsive screen */
