@@ -38,60 +38,54 @@
                 <div class="sidebelow">
                     <div class="below-box1">
                         <div class="inside-box">
-                            <a href="#">
+                            <a href="index.html" id="load" onclick="loadpage(event, 'index.html')">
                                 <ul><i class="fa-solid fa-house"></i></ul>
                            <p>Dashboard</p>
+                           
                             </a>
                         </div>
                     </div>  
                     <div class="below-box"><div class="inside-box">
-                        <a href="#">
-                            <ul><i class="fa-regular fa-calendar-check"></i></ul>
-                            <p>Appointment</p>
+                        <a href="appointment.html" id="load" onclick="loadpage(event, 'appointment.html')">
+                            <ul><i class="fa-solid fa-user"></i></ul>
+                            <p>Manangement</p>
                         </a>     
                     </div>
                 </div>
                     <div class="below-box">
                         <div class="inside-box">
-                            <a href="#">
+                            <a href="Attendence.html" id="load" onclick="loadpage(event, 'Attendence.html')">
                                 <ul><i class="fa-solid fa-calendar-days"></i></ul>
-                           <p>Calender</p>
+                           <p>Attendence</p>
                             </a>
                             
                         </div>
                     </div>
                     <div class="below-box">
                         <div class="inside-box">
-                            <a href="#">
-                                <ul><i class="fa-solid fa-user"></i></ul>
-                           <p>Staff</p>
+                            <a href="payroll.html" id="load" onclick="loadpage(event, 'payroll.html')">
+                            <ul><i class="fa-solid fa-money-check-dollar"></i></ul>
+                           <p>Payroll</p>
                             </a>
                             
                         </div>
                     </div>
                     <div class="below-box"><div class="inside-box">
-                        <a href="#">
-                            <ul><i class="fa-solid fa-circle-user"></i></ul>
-                       <p>Client</p>
+                        <a href="todo.html" id="load" onclick="loadpage(event, 'todo.html')">
+                            <ul><i class="fa-solid fa-list"></i></ul>
+                       <p>To-do list</p>
                         </a>
                         
                     </div></div>
                     <div class="below-box">
                         <div class="inside-box">
-                            <a href="#">
-                                <ul><i class="fa-solid fa-link"></i></ul>
-                           <p>Partnership</p>
+                            <a href="Station.html" id="load" onclick="loadpage(event, 'Station.html')">
+                                <ul><i class="fa-solid fa-location-crosshairs"></i></ul>
+                           <p>Station</p>
                             </a>
                         </div>
                     </div>
-                    <div class="below-box">
-                        <div class="inside-box">
-                           <a href="#">
-                            <ul><i class="fa-solid fa-film"></i></ul>
-                            <p>History</p>
-                           </a>
-                        </div>
-                    </div>
+                    
                     <div class="footer-below">
                         <div class="inside-box">
                         <a href="https://www.tvk.gov.kh/">
@@ -105,7 +99,7 @@
             <!-- Content 1 -->
 
             <!-- Content 2 -->
-            <div class="content2">
+            <div class="content2" id="id1">
                 <div class="sidebar1">
                     <div class="sidebar-in">
                         <div class="sidebar-in-1">
@@ -300,6 +294,22 @@
             <!-- For pop up  -->                  
         </div>
     </main>
-    <script src="index.js" ></script>
+    <script src="index.js" >
+          function loadPage(event, url) {
+        event.preventDefault(); // Prevent page reload
+        
+        // Add fade-out effect before hiding the link
+        const link = document.getElementById("loadLink");
+        link.classList.add("fade-out");
+    
+        // Fetch content of the second page (page2.html)
+        fetch(url)
+            .then(response => response.text())  // Convert response to HTML content
+            .then(data => {
+                document.getElementById("content").innerHTML = data;  // Load content into 'content' div
+            })
+            .catch(error => console.error('Error:', error));  // Handle any errors
+    }
+    </script>
 </body>
 </html>
