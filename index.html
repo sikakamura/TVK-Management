@@ -24,7 +24,7 @@
     <main class="parent">
         <div class="children">
             <!-- Content 1 -->
-            <div class="content1">
+            <div class="content1" id="navbar">
                 <div class="sideabove">
                     <div class="above-box">
                         <div class="box-image">
@@ -33,21 +33,26 @@
                         <div class="box-title">
                             <h2>ទូរទស្សន៍ជាតិកម្ពុជា</h2>
                         </div>
+                        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                            <i class="fa-solid fa-chevron-left"></i>
+                          </button>
+                          <div id="overlay" onclick="closeSidebar()" aria-hidden="true" ></div>
                     </div>
                 </div>
+                
                 <div class="sidebelow">
+                    
                     <div class="below-box1">
                         <div class="inside-box">
                             <a href="index.html" id="load" onclick="loadpage(event, 'index.html')">
-                                <ul><i class="fa-solid fa-house"></i></ul>
+                                <span><i class="fa-solid fa-house"></i></span>
                            <p>Dashboard</p>
-                           
                             </a>
                         </div>
                     </div>  
                     <div class="below-box"><div class="inside-box">
                         <a href="appointment.html" id="load" onclick="loadpage(event, 'appointment.html')">
-                            <ul><i class="fa-solid fa-user"></i></ul>
+                            <span><i class="fa-solid fa-user"></i></span>
                             <p>Manangement</p>
                         </a>     
                     </div>
@@ -55,7 +60,7 @@
                     <div class="below-box">
                         <div class="inside-box">
                             <a href="Attendence.html" id="load" onclick="loadpage(event, 'Attendence.html')">
-                                <ul><i class="fa-solid fa-calendar-days"></i></ul>
+                                <span><i class="fa-solid fa-calendar-days"></i></span>
                            <p>Attendence</p>
                             </a>
                             
@@ -64,7 +69,7 @@
                     <div class="below-box">
                         <div class="inside-box">
                             <a href="payroll.html" id="load" onclick="loadpage(event, 'payroll.html')">
-                            <ul><i class="fa-solid fa-money-check-dollar"></i></ul>
+                            <span><i class="fa-solid fa-money-check-dollar"></i></span>
                            <p>Payroll</p>
                             </a>
                             
@@ -72,7 +77,7 @@
                     </div>
                     <div class="below-box"><div class="inside-box">
                         <a href="todo.html" id="load" onclick="loadpage(event, 'todo.html')">
-                            <ul><i class="fa-solid fa-list"></i></ul>
+                            <span><i class="fa-solid fa-list"></i></span>
                        <p>To-do list</p>
                         </a>
                         
@@ -80,7 +85,7 @@
                     <div class="below-box">
                         <div class="inside-box">
                             <a href="Station.html" id="load" onclick="loadpage(event, 'Station.html')">
-                                <ul><i class="fa-solid fa-location-crosshairs"></i></ul>
+                                <span><i class="fa-solid fa-location-crosshairs"></i></span>
                            <p>Station</p>
                             </a>
                         </div>
@@ -89,17 +94,18 @@
                     <div class="footer-below">
                         <div class="inside-box">
                         <a href="https://www.tvk.gov.kh/">
-                            <ul><i class="fa-solid fa-earth-americas"></i></ul>
+                            <span><i class="fa-solid fa-earth-americas"></i></span>
                        <p>View Us</p>
                         </a>
                     </div>
                 </div>    
                 </div>
             </div>
+          
             <!-- Content 1 -->
 
             <!-- Content 2 -->
-            <div class="content2" id="id1">
+            <div class="content2">
                 <div class="sidebar1">
                     <div class="sidebar-in">
                         <div class="sidebar-in-1">
@@ -131,6 +137,9 @@
                     </div>
                     <div class="below-box-content2-inside2">
                         <div class="boxin-inside2">
+                            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+                                <i class="fa-solid fa-sliders"></i>
+                              </button>
                             <ul><i class="fa-solid fa-sliders"></i></ul>
                             <p>Today</p>
                         </div>
