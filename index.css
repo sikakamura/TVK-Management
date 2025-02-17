@@ -483,6 +483,7 @@
   .box-title {
     padding-top: 0.7em;
     text-align: left;
+    padding-left: 0.3em;
   }
   .box-title h2{
     font-size: 20px;
@@ -620,14 +621,53 @@
 
 /* Styles for screens between 768px and 1023px (tablet) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content1 {
-    visibility: hidden;
-    display: none;
+  .content1{
+    z-index: 1000;
+    position: fixed;
+    height: 100vh;
+    display: block;
+    width: min(230px, 100%);
+    background-color: white;
+    left: -100%;
+    transition: left 350ms ease-out;
+  }
+  .content1.show{
+    display: block;
+    left: 0;
+  }
+  #close-sidebar-button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 0.8em;
+    font-size: 25px;
+  }
+  .sideabove{
+    padding-top: 0;
+  }
+  .box-title {
+    padding-top: 0.7em;
+    text-align: left;
+    text-align: center;
+    padding-top: 1.1em;
+  }
+  .box-title h2{
+    font-size: 25px;
+  }
+  .box-image{
+    width: 75%;
+    height: 100%;
+    padding-left: 0.5em;
+    padding-top: 1.1em;
+  }
+  .above-box{
+    padding: 0;
+    padding-top: 0.7em;
   }
   .content2 {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
   }
   .sidebar-in-2 ul {
     padding-left: 0px;
@@ -637,7 +677,7 @@
     padding-right: 0px;
   }
   .circle {
-    margin-top: 7px;
+    visibility: hidden;
   }
   .sidebar-in-2 {
     justify-content: flex-end;
@@ -653,7 +693,7 @@
   }
   .below-box-content2-inside1 {
     padding-top: 6px;
-    padding-left: 20px;
+    padding-left: 1.5em;
   }
   .below-box-content2-inside2 {
     padding-right: 2em;
@@ -661,18 +701,22 @@
     padding-top: 12px;
   }
   .boxin-inside2 {
-    width: 26%;
-    height: 30px;
-    align-items: center;
-    padding-top: 10px;
+    height: 1.3em;
+    width: 2em;
+    border: none;
   }
-  .boxin-inside2 p {
-    font-size: 23px;
+  .boxin-inside2 p,
+  .boxin-inside2  ul {
+    display: none;
   }
   .boxin-inside2 ul {
     padding-top: 3px;
     padding-left: 3.5px;
     font-size: 20px;
+  }
+  #close-sidebar-button, #open-sidebar-button{
+    display: block;
+    cursor: pointer;
   }
   /* Sidebar 2 */
   .sidebar2 {
