@@ -150,35 +150,26 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Description</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                                <th>Gmail</th>
+                                <th>Phone Number</th>
+                                <th>Sex</th>
+                                <th>Position</th>
                                 <th>Actions</th>
-                                <th><button onclick="showPopup()">Add Item</button></th>
+                                <th><button onclick="showPopup()">Add</button></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Item 1</td>
-                                <td>Description of item 1</td>
-                                <td>10</td>
-                                <td>$20.00</td>
-                                <td>
-                                    <button onclick="editItem(this)">Edit</button>
-                                    <button onclick="deleteItem(this)">Delete</button>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <!-- For pop up -->
                 <div id="popupForm" class="popup">
-                    <h3>Add New Item</h3>
-                    <input type="text" id="itemName" placeholder="Item Name" required>
-                    <input type="text" id="itemDescription" placeholder="Description" required>
-                    <input type="number" id="itemQuantity" placeholder="Quantity" required>
-                    <input type="text" id="itemPrice" placeholder="Price" required>
+                    <h3>Add New staff</h3>
+                    <input type="text" id="itemName" placeholder="Name" required>
+                    <input type="gmail " id="itemGmail" placeholder="Gmail" required>
+                    <input type="number" id="itemPhonenumber" placeholder="PhoneNumber" required>
+                    <input type="text" id="itemSex" placeholder="Sex" required>
+                    <input type="text" id="itemPosition" placeholder="Position" required>
                     <div class="buttons">
                         <button onclick="addItem()">Submit</button>
                         <button onclick="closePopup()">Cancel</button>
@@ -223,7 +214,7 @@
           colors: ['transparent']
         },
         xaxis: {
-          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+          categories: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         },
         yaxis: {
           title: {

@@ -13,26 +13,28 @@ window.onload = function () {
 
 function addItem() {
     const name = document.getElementById('itemName').value;
-    const description = document.getElementById('itemDescription').value;
-    const quantity = document.getElementById('itemQuantity').value;
-    const price = document.getElementById('itemPrice').value;
+    const gmail = document.getElementById('itemGmail').value;
+    const phonenumber = document.getElementById('itemPhonenumber').value;
+    const sex = document.getElementById('itemSex').value;
+    const position = document.getElementById('itemPosition').value;
 
-    if (!name || !description || !quantity || !price) {
+    if (!name || !gmail || !phonenumber || !sex || !position) {
         alert('Please fill in all fields.');
         return;
     }
 
     let items = JSON.parse(localStorage.getItem('items')) || [];
-    items.push({ id: items.length + 1, name, description, quantity, price });
+    items.push({ id: items.length + 1, name, gmail, phonenumber, sex , position });
     localStorage.setItem('items', JSON.stringify(items));
 
     renderTable(); // Refresh the table
 
     // Clear form fields and close popup
     document.getElementById('itemName').value = '';
-    document.getElementById('itemDescription').value = '';
-    document.getElementById('itemQuantity').value = '';
-    document.getElementById('itemPrice').value = '';
+    document.getElementById('itemGmail').value = '';
+    document.getElementById('itemPhonenumber').value = '';
+    document.getElementById('itemSex').value = '';
+    document.getElementById('itemPosition').value = '';
 
     closePopup();
 }
@@ -47,9 +49,10 @@ function renderTable() {
         newRow.innerHTML = `
             <td>${index + 1}</td>
             <td>${item.name}</td>
-            <td>${item.description}</td>
-            <td>${item.quantity}</td>
-            <td>$${item.price}</td>
+            <td>${item.gmail}</td>
+            <td>${item.phonenumber}</td>
+            <td>${item.sex}</td>
+            <td>${item.position}</td>
             <td>
                 <button onclick="editItem(${index})">Edit</button>
                 <button onclick="deleteItem(${index})">Delete</button>
@@ -72,9 +75,10 @@ function editItem(index) {
 
     // Populate input fields with existing data
     document.getElementById('itemName').value = item.name;
-    document.getElementById('itemDescription').value = item.description;
-    document.getElementById('itemQuantity').value = item.quantity;
-    document.getElementById('itemPrice').value = item.price;
+    document.getElementById('itemGmail').value = item.gmail;
+    document.getElementById('itemPhonenumber').value = item.phonenumber;
+    document.getElementById('itemSex').value = item.sex;
+    document.getElementById('itemPosition').value = item.position;
 
     // Remove the old item
     items.splice(index, 1);
