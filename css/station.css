@@ -258,3 +258,259 @@
   width: 100%;
   height: 100%;
 }
+/* For mobile responsive */
+@media (max-width: 767px) {
+  .content1{
+    z-index: 1000;
+    position: fixed;
+    height: 100vh;
+    display: block;
+    width: min(200px, 100%);
+    background-color: white;
+    left: -100%;
+    transition: left 350ms ease-out;
+  }
+  .content1.show{
+    display: block;
+    left: 0;
+  }
+  #close-sidebar-button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 0.8em;
+  }
+  .sideabove{
+    padding-top: 0;
+  }
+  .box-title {
+    padding-top: 0.5em;
+    text-align: left;
+    padding-left: 0.3em;
+  }
+  .box-title h2{
+    font-size: 20px;
+  }
+  .box-image{
+    width: 45%;
+    height: 4em;
+    padding-left: 0.5em;
+  }
+  .above-box{
+    padding: 0;
+    padding-top: 0.7em;
+  }
+  .above-box i{
+    color: black;
+  }
+ #open-sidebar-button{
+  display: block;
+  cursor: pointer;
+ }
+  #close-sidebar-button {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* content1 */
+
+  /* Content2 */
+  .content2 {
+    width: 100%;
+  }
+  .sidebar-in-2 ul {
+    padding-left: 0px;
+  }
+  .sidebar-in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .circle {
+    visibility: hidden;
+  }
+  .sidebar-in-2 {
+    justify-content: flex-end;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  /* For Management bar */
+  .below-box-content2 {
+    width: 100%;
+    height: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .below-box-content2-inside1 {
+    padding-left: 20px;
+  }
+  .below-box-content2-inside2 {
+    padding-right: 1.5em;
+    padding-top: 13px;
+    padding-bottom: 2em;
+  }
+  .boxin-inside2 {
+    height: 1.3em;
+    border: none;
+    padding-top: 0;
+    padding-right: 2em;
+  }
+  .boxin-inside2 i{
+    font-size: 1rem;
+    color: black;
+    border: 1px solid black;
+  }
+  .boxin-inside2 button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+    padding-top: 0.2em;
+  }
+  .boxin-inside2 p,
+  .boxin-inside2  ul {
+    display: none;
+  }
+  .footer-below{
+    margin-top: 100px;
+  }
+  /* Sidebar 2 */
+  .sidebar2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    height: 50%;
+  }
+  .sidebar2-content{
+    height: 100%;
+    padding: 0;
+    padding-top: 0.5em;
+  }
+  /* Sidebar 2 */
+}
+
+/* Responsive for small laptop */
+@media (min-width: 1024px) and (max-width: 1290px) {
+  /*  Content 1 */
+  .sideabove {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family: Hanuman;
+  }
+  .above-box {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 8px;
+  }
+  .box-image {
+    width: 45%;
+    height: 65px;
+  }
+  .box-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .box-title {
+    width: 50%;
+    text-align: center;
+  }
+  .box-title h2 {
+    font-size: 19px;
+    padding-right: 0.5em;
+  }
+  .below-box,
+  .below-box1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .inside-box p {
+    font-size: 0.9rem;
+  }
+  .footer-below {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    margin-top: 165px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    padding-left: 0.8em;
+    font-size: 22px;
+  }
+  /*  Content 1 */
+
+  .content2 {
+    width: 100%;
+  }
+  .sidebar-in-2 ul {
+    padding-left: 0px;
+  }
+  .sidebar-in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .circle {
+    margin-top: 7px;
+  }
+  .sidebar-in-2 {
+    justify-content: flex-end;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  /* For Dashborad */
+  .below-box-content2 {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+  }
+  .below-box-content2-inside1 {
+    padding-top: 0.5em;
+    padding-left: 20px;
+  }
+  .below-box-content2-inside2 {
+    display: flex;
+    padding-top: 0.6em;
+  }
+  .boxin-inside2 {
+    width: 17%;
+    height: 30px;
+    align-items: center;
+    padding-top: 14px;
+    padding-right: 2em;
+  }
+  .below-box-content2-inside1 p,
+  .boxin-inside2 p {
+    font-size: 20px;
+  }
+  .boxin-inside2 p {
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  .boxin-inside2 ul {
+    padding-top: 3px;
+    padding-left: 3.5px;
+    font-size: 20px;
+  }
+  /* Sidebar 2 */
+  .sidebar2 {
+    height: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
+  }
+  .sidebar2-content {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
+  }
+  /* Sidebar 2 */
+
+}

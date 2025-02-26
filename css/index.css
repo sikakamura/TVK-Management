@@ -340,7 +340,8 @@
 
 /* Content 2 */
 
-#close-sidebar-button, #open-sidebar-button{
+#close-sidebar-button,
+#open-sidebar-button {
   display: none;
 }
 
@@ -447,7 +448,7 @@
   cursor: pointer;
   margin: 0;
 }
-#overlay{
+#overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -461,7 +462,7 @@
 /* For Responsive screen */
 /* Styles for screens smaller than 768px (mobile) */
 @media (max-width: 767px) {
-  .content1{
+  .content1 {
     z-index: 1000;
     position: fixed;
     height: 100vh;
@@ -471,18 +472,18 @@
     left: -100%;
     transition: left 350ms ease-out;
   }
-  .content1.show{
+  .content1.show {
     display: block;
     left: 0;
   }
-  #close-sidebar-button{
+  #close-sidebar-button {
     border: none;
     background-color: white;
     cursor: pointer;
     padding-right: 10px;
     padding-top: 0.8em;
   }
-  .sideabove{
+  .sideabove {
     padding-top: 0;
   }
   .box-title {
@@ -490,18 +491,29 @@
     text-align: left;
     padding-left: 0.3em;
   }
-  .box-title h2{
+  .box-title h2 {
     font-size: 20px;
   }
-  .box-image{
+  .box-image {
     width: 47%;
     height: 4em;
     padding-left: 0.5em;
   }
-  .above-box{
+  .above-box {
     padding: 0;
     padding-top: 0.7em;
   }
+  .above-box i {
+    color: black;
+  }
+  #close-sidebar-button,
+  #open-sidebar-button {
+    display: block;
+    cursor: pointer;
+  }
+  /* Content1 */
+
+/*Content2 */
   .content2 {
     width: 100%;
     display: flex;
@@ -521,7 +533,7 @@
     margin-right: 0px;
     padding-right: 0px;
   }
-  /* For Dashborad */
+  /* For Dashborad bar */
   .below-box-content2 {
     width: 100%;
     height: 50px;
@@ -541,11 +553,18 @@
     width: 2em;
     border: none;
   }
+  .boxin-inside2 i {
+    color: black
+  }
+  .boxin-inside2 button {
+    background-color: white;
+    border: 1px solid black;
+  }
   .boxin-inside2 p,
-  .boxin-inside2  ul {
+  .boxin-inside2 ul {
     display: none;
   }
-  .footer-below{
+  .footer-below {
     margin-top: 100px;
   }
   /* Sidebar 2 */
@@ -565,13 +584,13 @@
   .sidebar2-content-box {
     padding-left: 0px;
   }
-  .title-detail-for2{
+  .title-detail-for2 {
     margin-bottom: 0px;
   }
-  .for-title > .alertt{
+  .for-title > .alertt {
     visibility: hidden;
   }
-  .box-title-content2{
+  .box-title-content2 {
     width: 100%;
     padding-top: 8px;
   }
@@ -587,22 +606,13 @@
   .sidebar2-content-box4 p {
     font-size: 15px;
   }
-  .sidebar2-content-box1 >.box-img,
-  .sidebar2-content-box2 >.box-img,
-  .sidebar2-content-box3 >.box-img,
-  .sidebar2-content-box4 >.box-img {
+  .sidebar2-content-box1 > .box-img,
+  .sidebar2-content-box2 > .box-img,
+  .sidebar2-content-box3 > .box-img,
+  .sidebar2-content-box4 > .box-img {
     visibility: hidden;
   }
   /* Sidebar 2 */
-
-/* For burgur menu */
-
-#close-sidebar-button, #open-sidebar-button{
-  display: block;
-  cursor: pointer;
-}
-
-/* For burgur menu */
 
   /* Sidebar 3 */
   .sidebar3 {
@@ -618,7 +628,7 @@
   .sidebar3-content button {
     height: 40px;
   }
-  .box-title-sidebar3{
+  .box-title-sidebar3 {
     padding-left: 21px;
   }
   /* Sidebar 3 */
@@ -626,7 +636,7 @@
 
 /* Styles for screens between 768px and 1023px (tablet) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content1{
+  .content1 {
     z-index: 1000;
     position: fixed;
     height: 100vh;
@@ -636,11 +646,11 @@
     left: -100%;
     transition: left 350ms ease-out;
   }
-  .content1.show{
+  .content1.show {
     display: block;
     left: 0;
   }
-  #close-sidebar-button{
+  #close-sidebar-button {
     border: none;
     background-color: white;
     cursor: pointer;
@@ -648,7 +658,7 @@
     padding-top: 0.8em;
     font-size: 25px;
   }
-  .sideabove{
+  .sideabove {
     padding-top: 0;
   }
   .box-title {
@@ -657,16 +667,16 @@
     text-align: center;
     padding-top: 1.1em;
   }
-  .box-title h2{
+  .box-title h2 {
     font-size: 25px;
   }
-  .box-image{
+  .box-image {
     width: 75%;
     height: 100%;
     padding-left: 0.5em;
     padding-top: 1.1em;
   }
-  .above-box{
+  .above-box {
     padding: 0;
     padding-top: 0.7em;
   }
@@ -711,7 +721,7 @@
     border: none;
   }
   .boxin-inside2 p,
-  .boxin-inside2  ul {
+  .boxin-inside2 ul {
     display: none;
   }
   .boxin-inside2 ul {
@@ -719,7 +729,8 @@
     padding-left: 3.5px;
     font-size: 20px;
   }
-  #close-sidebar-button, #open-sidebar-button{
+  #close-sidebar-button,
+  #open-sidebar-button {
     display: block;
     cursor: pointer;
   }
@@ -740,13 +751,13 @@
   .sidebar2-content-box {
     padding-left: 0px;
   }
-  .title-detail-for2{
+  .title-detail-for2 {
     margin-bottom: 0px;
   }
-  .for-title > .alertt{
+  .for-title > .alertt {
     visibility: hidden;
   }
-  .box-title-content2{
+  .box-title-content2 {
     width: 100%;
     padding-top: 8px;
   }
@@ -762,10 +773,10 @@
   .sidebar2-content-box4 p {
     font-size: 30px;
   }
-  .sidebar2-content-box1 >.box-img,
-  .sidebar2-content-box2 >.box-img,
-  .sidebar2-content-box3 >.box-img,
-  .sidebar2-content-box4 >.box-img {
+  .sidebar2-content-box1 > .box-img,
+  .sidebar2-content-box2 > .box-img,
+  .sidebar2-content-box3 > .box-img,
+  .sidebar2-content-box4 > .box-img {
     visibility: hidden;
   }
   /* Sidebar 2 */
@@ -784,37 +795,37 @@
   .sidebar3-content button {
     height: 40px;
   }
-  .box-title-sidebar3{
+  .box-title-sidebar3 {
     padding-left: 21px;
   }
   /* Sidebar 3 */
-  .sidebar3{
+  .sidebar3 {
     padding-top: 0px;
     height: 5%;
   }
-  .sidebar3-content{
+  .sidebar3-content {
     height: 100%;
   }
   /* Sidebar 3 */
 
   /* Card  */
-    #cardContainer {
-      width: 90%; /* Make it responsive within the available space */
-      max-width: 900px; /* Prevent it from becoming too wide */
-      min-width: 350px; /* Prevent it from shrinking too much */
-      margin: 0 auto; /* Center it */
-      display: flex; /* Use flexbox for layout */
-      flex-wrap: wrap; /* Allow wrapping of cards */
-      margin-top: 2em;
-      padding-left: 2.5em;
-      padding-right: 0px;
-      gap: 9em;
-    }
-    .card {
-      width: 300px;
-      height: 350px;
-      box-sizing: border-box; /* Ensure padding doesn't affect the width */
-    }
+  #cardContainer {
+    width: 90%; /* Make it responsive within the available space */
+    max-width: 900px; /* Prevent it from becoming too wide */
+    min-width: 350px; /* Prevent it from shrinking too much */
+    margin: 0 auto; /* Center it */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    margin-top: 2em;
+    padding-left: 2.5em;
+    padding-right: 0px;
+    gap: 9em;
+  }
+  .card {
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  }
 }
 
 /* Styles for screens larger than 1024px (desktop) */
@@ -827,7 +838,7 @@
     padding-top: 10px;
     background-color: rgb(255, 255, 255);
     font-family: Hanuman;
-  } 
+  }
   .above-box {
     width: 100%;
     height: 80%;
@@ -847,29 +858,29 @@
     width: 50%;
     text-align: center;
   }
-  .box-title h2{
+  .box-title h2 {
     font-size: 19px;
     padding-right: 0.5em;
   }
   .below-box,
-.below-box1 {
-  justify-content: center;
-  align-items: center;
-}
-.inside-box p{
-  font-size: 0.9rem;
-}
-.footer-below {
-  width: 100%;
-  height: 10%;
-  margin: auto;
-  margin-top: 165px;
-  display: flex;
-  text-align: center;
-  gap: 10px;
-  padding-left: 0.8em;
-  font-size: 22px;
-}
+  .below-box1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .inside-box p {
+    font-size: 0.9rem;
+  }
+  .footer-below {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    margin-top: 165px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    padding-left: 0.8em;
+    font-size: 22px;
+  }
   /*  Content 1 */
 
   .content2 {
@@ -918,7 +929,7 @@
   .boxin-inside2 p {
     font-size: 20px;
   }
-  .boxin-inside2 p{
+  .boxin-inside2 p {
     padding-top: 0px;
     padding-right: 0px;
   }
@@ -944,13 +955,13 @@
   .sidebar2-content-box {
     padding-left: 0px;
   }
-  .title-detail-for2{
+  .title-detail-for2 {
     margin-bottom: 0px;
   }
-  .for-title > .alertt{
+  .for-title > .alertt {
     visibility: hidden;
   }
-  .box-title-content2{
+  .box-title-content2 {
     width: 100%;
     padding-top: 8px;
   }
@@ -966,10 +977,10 @@
   .sidebar2-content-box4 p {
     font-size: 30px;
   }
-  .sidebar2-content-box1 >.box-img,
-  .sidebar2-content-box2 >.box-img,
-  .sidebar2-content-box3 >.box-img,
-  .sidebar2-content-box4 >.box-img {
+  .sidebar2-content-box1 > .box-img,
+  .sidebar2-content-box2 > .box-img,
+  .sidebar2-content-box3 > .box-img,
+  .sidebar2-content-box4 > .box-img {
     visibility: hidden;
   }
   /* Sidebar 2 */
@@ -988,40 +999,39 @@
   .sidebar3-content button {
     height: 40px;
   }
-  .box-title-sidebar3{
+  .box-title-sidebar3 {
     padding-left: 21px;
     font-size: 20px;
     padding-top: 0.5em;
   }
   /* Sidebar 3 */
-  .sidebar3{
+  .sidebar3 {
     padding-top: 0px;
     height: 5%;
   }
-  .sidebar3-content{
+  .sidebar3-content {
     height: 100%;
   }
   /* Sidebar 3 */
 
   /* Card  */
-    #cardContainer {
-      width: 90%; /* Make it responsive within the available space */
-      max-width: 900px; /* Prevent it from becoming too wide */
-      min-width: 350px; /* Prevent it from shrinking too much */
-      margin: 0 auto; /* Center it */
-      display: flex; /* Use flexbox for layout */
-      flex-wrap: wrap; /* Allow wrapping of cards */
-      margin-top: 2em;
-      padding-left: 2.5em;
-      padding-right: 0px;
-      gap: 10em;
-    }
-    .card {
-      width: 350px;
-      height: 350px;
-      box-sizing: border-box; /* Ensure padding doesn't affect the width */
-    }
+  #cardContainer {
+    width: 90%; /* Make it responsive within the available space */
+    max-width: 900px; /* Prevent it from becoming too wide */
+    min-width: 350px; /* Prevent it from shrinking too much */
+    margin: 0 auto; /* Center it */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    margin-top: 2em;
+    padding-left: 2.5em;
+    padding-right: 0px;
+    gap: 10em;
+  }
+  .card {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  }
 }
-
 
 /* For Responsive screen */

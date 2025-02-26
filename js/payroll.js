@@ -115,3 +115,19 @@ function calculatePayroll() {
     // Show result modal
     new bootstrap.Modal(document.getElementById("payrollResultModal")).show();
 }
+
+// For sidebar in mobile
+
+const navbar = document.getElementById('navbar')
+const openButton = document.getElementById('open-sidebar-button')
+const media = window.matchMedia("(width < 768px")
+
+function openSidebar (){
+    navbar.classList.add('show')
+    openButton.setAttribute('aria-expand','true')
+    navbar.removeAttribute('inert')
+}
+function closeSidebar (){
+    navbar.classList.remove('show')
+    openButton.setAttribute('aria-expand','false')
+}

@@ -1,17 +1,28 @@
-// Clock
+// Function to update the clock
 function updateClock() {
+  const clockElement = document.querySelector('#clock'); 
+  
+  if (clockElement) {
     const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-    
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    document.getElementById('date').textContent = now.toLocaleDateString(undefined, options);
+    clockElement.textContent = now.toLocaleTimeString(); 
+  } else {
+   console.log(error); 
+  }
 }
 
-setInterval(updateClock, 1000);
-updateClock();
+// loadpage function
+function loadpage(event, url) {
+  event.preventDefault(); 
+  console.log('Loading page:', url);
+  window.location.href = url;
+}
+
+
+// Ensure the code runs after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  updateClock();
+  setInterval(updateClock, 1000);
+});
 
 // For drop down
 const dropdownTrigger = document.getElementById('dropdownTrigger');
@@ -57,7 +68,7 @@ function loadAttendance(date) {
 function renderAttendanceTable(date, staffData) {
   let html = `<h2>Attendance for ${date}</h2>`;
   staffData.forEach(staff => {
-    const savedStatus = getAttendanceStatus(date, staff.id); // Load saved attendance
+    const savedStatus = getAttendanceStatus(date, staff.id);
     html += `
       <div class="attendance-row" data-staff-id="${staff.id}">
         <div class="staff-name">${staff.name}</div>
@@ -122,4 +133,20 @@ function saveAttendanceStatus(date, staffId, status) {
 function getAttendanceStatus(date, staffId) {
   let attendanceData = JSON.parse(localStorage.getItem('attendanceData')) || {};
   return attendanceData[date]?.[staffId] || null;
+}
+
+// For sidebar in mobile
+
+const navbar = document.getElementById('navbar')
+const openButton = document.getElementById('open-sidebar-button')
+const media = window.matchMedia("(width < 768px")
+
+function openSidebar (){
+    navbar.classList.add('show')
+    openButton.setAttribute('aria-expand','true')
+    navbar.removeAttribute('inert')
+}
+function closeSidebar (){
+    navbar.classList.remove('show')
+    openButton.setAttribute('aria-expand','false')
 }
